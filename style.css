@@ -124,6 +124,19 @@ input[type="reset"]:active {
 	border-top-color: #995094;
 }
 
+input[type="file"] {
+	padding: 0;
+	border: none;
+}
+
+fieldset {
+	border: 1px solid #e7bee5;
+}
+
+legend {
+	padding: 0 5px;
+}
+
 ::-webkit-input-placeholder {
 	color: #999;
 }
