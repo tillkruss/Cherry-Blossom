@@ -177,11 +177,6 @@ legend {
 	font-style: normal;
 }
 
-.page-header,
-.archive-header {
-	background-color: #fbe5fa;
-}
-
 
 /* =========================================================================
  *   Navigation
@@ -229,6 +224,22 @@ ul.nav-menu ul a:hover,
 	background-color: #fff;
 	border-color: transparent;
 }
+
+
+/* =========================================================================
+ *   Content
+ * ========================================================================= */
+
+.page-header,
+.archive-header,
+.error404 .page-wrapper {
+	background-color: #fbe5fa;
+}
+
+.error404 .page-title:before {
+	color: #fbe5fa;
+}
+
 
 /* =========================================================================
  *   Post Formats
