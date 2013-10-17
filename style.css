@@ -1,0 +1,398 @@
+/*
+Theme Name: Cherry Blossom
+Theme URI: http://wordpress.org/themes/cherry-blossom
+Author: Till Krüss
+Author URI: http://till.kruss.me/
+Description: Cherry Blossom is a pink, flat, responsive theme that builds off of Twenty Thirteen.
+Version: 1.1.1
+Tags: pink, white, light, one-column, fixed-width, featured-images, threaded-comments, custom-menu, custom-background, post-formats, sticky-post, editor-style, translation-ready, rtl-language-support, microformats
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: twentythirteen
+
+The header illustration, like this theme, was made by Till Krüss and is licensed under the GPL.
+*/
+
+@import url('../twentythirteen/style.css');
+
+
+body {
+	background-color: #fafafa;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+	font-family: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.site-description {
+	font-family: 'Bad Script', cursive;
+}
+
+#page {
+	max-width: 1080px;
+	box-shadow: 0 0px 6px rgba(100, 100, 100, 0.3);
+}
+
+
+/* =========================================================================
+ *   Links
+ * ========================================================================= */
+
+a,
+a:visited {
+	color: #cb69c4;
+}
+
+a:active,
+a:hover {
+	color: #995094;
+}
+
+#content .entry-title a {
+	color: #000;
+}
+
+#content .entry-title a:hover {
+	color: #cb69c4;
+}
+
+#content .entry-meta a {
+	color: #cb69c4;
+}
+
+#content .entry-meta a:hover {
+	color: #995094;
+}
+
+#content .entry-content a,
+.comment-content a {
+	color: #cb69c4;
+}
+
+#content .entry-content a:hover,
+.comment-content a:hover,
+.comment-meta a:hover {
+	color: #995094;
+}
+
+
+/* =========================================================================
+ *   Forms
+ * ========================================================================= */
+
+button,
+input,
+textarea {
+	border-color: #e7bee5;
+}
+
+input:focus,
+textarea:focus {
+	border-color: #cb69c4;
+}
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+	background: #cb69c4;
+	border-bottom-color: #995094;
+	color: #fff;
+}
+
+button:hover,
+button:focus,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus {
+	background: #995094;
+}
+
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active {
+	background: #cb69c4;
+	border-top-color: #995094;
+}
+
+::-webkit-input-placeholder {
+	color: #e4aee0;
+}
+
+:-moz-placeholder {
+	color: #e4aee0;
+}
+
+::-moz-placeholder {
+	color: #e4aee0;
+}
+
+:-ms-input-placeholder {
+	color: #e4aee0;
+}
+
+
+/* =========================================================================
+ *   Header
+ * ========================================================================= */
+
+.site-header .home-link {
+	height: 309px;
+	background: #eac7e8 url('images/cherry-blossom.jpg') top left no-repeat;
+	text-align: center;
+	text-shadow: 0px 0px 5px #f6ddf4;
+}
+
+.site-title {
+	padding-top: 80px;
+}
+
+.site-header .site-title:hover {
+	text-decoration: none;
+}
+
+.site-description {
+	font-style: normal;
+}
+
+.page-header,
+.archive-header {
+	background-color: #fbe5fa;
+}
+
+
+/* =========================================================================
+ *   Navigation
+ * ========================================================================= */
+
+.navbar {
+	background-color: #000;
+}
+
+.nav-menu li a {
+	color: #fff;
+}
+
+.nav-menu li:hover > a,
+.nav-menu li a:hover {
+	background-color: #e4aee0;
+	color: #fff;
+}
+
+.nav-menu .sub-menu,
+.nav-menu .children {
+	background-color: #000;
+	border-color: #000;
+}
+
+ul.nav-menu ul a:hover,
+.nav-menu ul ul a:hover {
+	background-color: #e4aee0;
+}
+
+.nav-menu .current_page_item > a,
+.nav-menu .current_page_ancestor > a,
+.nav-menu .current-menu-item > a,
+.nav-menu .current-menu-ancestor > a {
+	color: #e4aee0;
+	font-style: normal;
+}
+
+.site-header .search-field {
+	background-image: url('images/search-icon.png');
+}
+
+.site-header .search-field:focus {
+	background-image: url('../twentythirteen/images/search-icon.png');
+	background-color: #fff;
+	border-color: transparent;
+}
+
+/* =========================================================================
+ *   Post Formats
+ * ========================================================================= */
+
+.format-aside,
+.format-audio,
+.format-chat,
+.format-gallery,
+.format-link,
+.format-quote,
+.format-status,
+.format-video {
+	background-color: #fff;
+}
+
+.format-gallery .entry-meta a,
+.format-gallery .entry-content a {
+	color: #cb69c4;
+}
+
+.format-quote .entry-content,
+.format-status .entry-content {
+	color: inherit;
+}
+
+
+/* =========================================================================
+ *   Page Links
+ * ========================================================================= */
+
+.page-links a,
+.page-links > span {
+	background: #fff;
+	border-color: #fff;
+}
+
+#content .page-links a {
+	background: #fbe5fa;
+	border-color: #fbe5fa;
+	color: #000;
+}
+
+#content .page-links a:hover {
+	background: #fff;
+	color: #000;
+}
+
+
+/* =========================================================================
+ *   Comments
+ * ========================================================================= */
+
+.no-comments,
+.comment-respond {
+	background-color: #fbe5fa;
+}
+
+.comment-author .fn,
+.comment-author .url,
+.comment-reply-link,
+.comment-reply-login {
+	color: #cb69c4;
+}
+
+.form-allowed-tags,
+.form-allowed-tags code {
+	color: #333;
+}
+
+
+/* =========================================================================
+ *   Post Navigation
+ * ========================================================================= */
+
+.paging-navigation {
+	background-color: #fbe5fa;
+}
+
+.navigation a {
+	color: #cb69c4;
+}
+
+.navigation a:hover {
+	color: #995094;
+}
+
+.paging-navigation .meta-nav {
+	background-color: #cb69c4;
+}
+
+.paging-navigation a:hover .meta-nav {
+	background-color: #995094;
+}
+
+.paging-navigation .nav-next {
+	padding: 0;
+}
+
+.paging-navigation .nav-next .meta-nav {
+	padding: 17px 0 23px;
+	width: 80px;
+}
+
+
+/* =========================================================================
+ *   Footer
+ * ========================================================================= */
+
+.site-footer,
+.site-footer .sidebar-container {
+	background-color: #000;
+}
+
+.site-footer .widget a {
+	color: #e4aee0;
+}
+
+.site-info {
+	color: #fff;
+}
+
+.site-info a {
+	color: #e4aee0;
+}
+
+
+/* =========================================================================
+ *   Media Queries
+ * ========================================================================= */
+
+@media (max-width: 643px) {
+
+	.site-header .home-link {
+		height: 230px;
+		background-size: cover;
+		background-position: top center;
+	}
+
+	.menu-toggle {
+		color: #fff;
+	}
+
+	.toggled-on .nav-menu li > ul a {
+		color: #fff;
+	}
+
+	.toggled-on .nav-menu li:hover > a,
+	.toggled-on .nav-menu .children a {
+		color: #fff;
+	}
+
+	.toggled-on .nav-menu li a:hover,
+	.toggled-on .nav-menu ul a:hover {
+		background-color: #e9c5e7;
+		color: #fff;
+	}
+
+}
+
+
+/* =========================================================================
+ *   Retina Images
+ * ========================================================================= */
+
+@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+
+	.site-header .home-link {
+		background-image: url('images/cherry-blossom-2x.jpg');
+	}
+
+	.site-header .search-field {
+		background-image: url('images/search-icon-2x.png');
+	}
+
+	.site-header .search-field:focus {
+		background-image: url('../twentythirteen/images/search-icon-2x.png');
+	}
+
+}
