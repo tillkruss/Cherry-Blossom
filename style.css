@@ -125,19 +125,19 @@ input[type="reset"]:active {
 }
 
 ::-webkit-input-placeholder {
-	color: #e4aee0;
+	color: #999;
 }
 
 :-moz-placeholder {
-	color: #e4aee0;
+	color: #999;
 }
 
 ::-moz-placeholder {
-	color: #e4aee0;
+	color: #999;
 }
 
 :-ms-input-placeholder {
-	color: #e4aee0;
+	color: #999;
 }
 
 
