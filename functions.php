@@ -1,8 +1,18 @@
 <?php
 
-// replace TwentyThirteen's Google fonts
-add_action( 'wp_enqueue_scripts', 'cherryblossom_enqueue_styles', 11 );
+// enqueue stylesheets
+add_action( 'wp_enqueue_scripts', 'cherryblossom_enqueue_styles', 12 );
 function cherryblossom_enqueue_styles() {
+	global $wp_styles;
+	$twentythirteen_cache_buster = isset( $wp_styles->registered[ 'twentythirteen-style' ]->ver ) ? $wp_styles->registered[ 'twentythirteen-style' ]->ver : false;
+	wp_deregister_style( 'twentythirteen-style' );
+	wp_enqueue_style( 'twentythirteen-style', get_template_directory_uri() . '/style.css', null, $twentythirteen_cache_buster );
+	wp_enqueue_style( 'cherryblossom-style', get_stylesheet_uri(), array(), wp_get_theme()->version );
+}
+
+// replace TwentyThirteen's Google fonts
+add_action( 'wp_enqueue_scripts', 'cherryblossom_replace_google_fonts', 11 );
+function cherryblossom_replace_google_fonts() {
 	wp_dequeue_style( 'twentythirteen-fonts' );
 	wp_enqueue_style( 'cherryblossom-fonts', 'http://fonts.googleapis.com/css?family=Bad+Script|Open+Sans:300italic,400italic,600italic,400,600,300', false, null );
 }
