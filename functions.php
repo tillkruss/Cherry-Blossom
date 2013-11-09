@@ -33,7 +33,7 @@ function cherryblossom_remove_custom_header() {
 // add footer theme credits
 add_action( 'twentythirteen_credits', 'cherryblossom_credits' );
 function cherryblossom_credits() {
-	echo 'Theme: <a href="http://wordpress.org/themes/cherry-blossom">Cherry Blossom</a> by <a href="http://till.kruss.me/">Till Krüss</a> |';
+	echo 'Theme: <a href="http://wordpress.org/themes/cherry-blossom">Cherry Blossom</a> by <a href="http://till.kruss.me/">Till Kr&uuml;ss</a> |';
 }
 
 // add custom background support
